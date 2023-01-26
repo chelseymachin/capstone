@@ -19,6 +19,7 @@ stemmer = PorterStemmer()
 word_net_lemmatizer = nltk.stem.WordNetLemmatizer()
 
 # initialize a dictionary of english stop words from nltk
+nltk.download('stopwords')
 stop_words = stopwords.words('english')
 stopwords_dictionary = Counter(stop_words)
 
