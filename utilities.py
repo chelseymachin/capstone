@@ -18,8 +18,11 @@ from transformers import BertTokenizerFast, BertForSequenceClassification
 stemmer = PorterStemmer()
 word_net_lemmatizer = nltk.stem.WordNetLemmatizer()
 
-# initialize a dictionary of english stop words from nltk
+# download necessary files from nltk library
 nltk.download('stopwords')
+nltk.download('wordnet')
+
+# initialize a dictionary of english stop words from nltk
 stop_words = stopwords.words('english')
 stopwords_dictionary = Counter(stop_words)
 
